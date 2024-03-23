@@ -1,5 +1,7 @@
 //declaring a variable that will hold the user's input
 let grades;
+//making the button responsive upon being clicked
+//clicking this button after inputting user's marks will insert a string at the bottom of the page that overwrites its current message along with the corresponding grade
 document.getElementById("submitMarks").onclick = function(marksInput) {
     grades = document.getElementById("marksInput").value;
     if (grades >100) {
