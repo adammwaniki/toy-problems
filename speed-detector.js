@@ -2,7 +2,8 @@
 //declaring a variable that will hold the user's input
 let speed;
 //making the button responsive upon being clicked
-//clicking this button after inputting user's marks will insert a string at the bottom of the page that overwrites its current message along with the corresponding grade
+//clicking this button after inputting the speed will output a message about the driver's point status
+//this code takes care of negative numbers by identifying them as invalid input 
 document.getElementById("submitSpeed").onclick = function() {
     speed = document.getElementById("speedInput").value;
     if (speed >=131) {
