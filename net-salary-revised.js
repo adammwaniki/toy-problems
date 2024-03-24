@@ -88,7 +88,10 @@ document.getElementById("submitPayDetails").onclick = function() {
     document.getElementById("netSalaryResult").textContent = `Your Net Salary is: ${net}`;
 */
 
-// Assigning an event listener to the submit button
+
+//the previous code is too packed and hard to read so I have broken it down
+//this time round we are going to have all the display details in one section to declutter the code
+//starting by Assigning an event listener to the submit button
 document.getElementById("submitPayDetails").onclick = function() { 
     // Inside this function, we now fetch the latest values of form inputs
     let basicPay = parseFloat(document.getElementById('basicPayInput').value);
