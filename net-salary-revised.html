@@ -1,0 +1,37 @@
+<!--the format here is pretty much the same as in challenge 1-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta tag to indicate support for UTF-8 character encoding-->
+        <meta charset="UTF-8">
+        <!--meta viewport tag to allow for content scaling on device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+        <title>Net Salary Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Net Salary Calculator</h1>
+        <!--label with a for attribute so that the browser knows where it's supposed to look-->
+            <label for="basicPayInput">Basic Pay</label>
+            <!--input box that has a paceholder message that will go away once the user starts filling in their details-->
+            <input id="basicPayInput" type="number" placeholder="basic pay"/><br>
+            <label for="benefitsInput">Benefits</label>
+            <input id="benefitsInput" type="number" placeholder="benefits"/><br>
+            <button id="submitPayDetails" type="submit">Submit Monthly Taxable Pay</button>
+            <!--id for linking to the js file-->
+            <p id ="grossSalaryResult">Your Gross Salary Is:</p><br>
+            <p id ="payeResult">Your PAYE Deduction Is:</p><br>
+            <p id ="nhifResult">Your NHIF Deduction Is:</p><br>
+            <p id ="nssfResult">Your NSSF Contribution Is:</p><br>
+            <p id ="netSalaryResult">Your Net Salary Is:</p><br>
+            <!--
+            <h2 id ="grossSalaryResult">Your Gross Salary Is:</h2><br>
+            <h2 id ="netSalaryResult">Your Net Salary Is:</h2><br>
+            <h2 id ="nhifResult">Your NHIF Deduction Is:</h2><br>
+            <h2 id ="nssfResult">Your NSSF Contribution Is:</h2><br>
+            <h2 id ="payeResult">Your PAYE Deduction Is:</h2><br>
+            -->
+        </div>
+        <script src ="net-salary-revised.js"></script>
+    </body>
