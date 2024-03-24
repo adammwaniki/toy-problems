@@ -6,6 +6,7 @@ document.getElementById("submitPayDetails").onclick = function() {
     let benefits = parseFloat(document.getElementById('benefitsInput').value);
     
     //equation to determine gross pay
+    //all other calculations will use gross as basis
     let gross = basicPay + benefits;
     
     // Function to calculate PAYE Deduction
@@ -81,6 +82,7 @@ document.getElementById("submitPayDetails").onclick = function() {
     let nssf = calculateNSSF(gross);
     
     // Display results
+    document.getElementById("grossSalaryResult").textContent = `Your  Gross Salary is: Kshs ${gross}`; 
     document.getElementById("payeResult").textContent = `Your Paye Deduction is: ${paye}`;
     document.getElementById("nhifResult").textContent = `Your NHIF Deduction is: ${nhif}`;
     document.getElementById("nssfResult").textContent = `Your NSSF Deduction is: ${nssf}`;
